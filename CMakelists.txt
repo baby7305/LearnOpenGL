@@ -18,5 +18,10 @@ add_executable(hello_window
     glad46/src/glad.c
     main.cpp
 )
+add_executable(hello_triangle
+        glad46/src/glad.c
+        hello_triangle.cpp
+)
 
 target_link_libraries(hello_window glfw)
+target_link_libraries(hello_triangle glfw)
