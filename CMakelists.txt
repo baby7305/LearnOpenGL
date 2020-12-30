@@ -26,7 +26,12 @@ add_executable(hello_triangle_exercise
         glad46/src/glad.c
         hello_triangle_exercise.cpp
 )
+add_executable(shaders_uniform
+        glad46/src/glad.c
+        shaders_uniform.cpp
+)
 
 target_link_libraries(hello_window glfw)
 target_link_libraries(hello_triangle glfw)
 target_link_libraries(hello_triangle_exercise glfw)
+target_link_libraries(shaders_uniform glfw)
