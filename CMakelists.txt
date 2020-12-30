@@ -36,3 +36,12 @@ target_link_libraries(hello_window glfw)
 target_link_libraries(hello_triangle glfw)
 target_link_libraries(hello_triangle_exercise glfw)
 target_link_libraries(shaders_uniform glfw)
+
+SET(IMAGES
+        ${CMAKE_SOURCE_DIR}/3.3.shader.fs
+        ${CMAKE_SOURCE_DIR}/3.3.shader.vs
+)
+
+FILE(COPY ${IMAGES} DESTINATION .)
+FILE(COPY ${IMAGES} DESTINATION "Debug")
+FILE(COPY ${IMAGES} DESTINATION "Release")
