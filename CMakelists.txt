@@ -13,6 +13,7 @@ find_package(Qt6 COMPONENTS Widgets REQUIRED)
 
 add_subdirectory(packages)
 include_directories(glad46/include)
+include_directories(glm-master)
 
 add_executable(hello_window
     glad46/src/glad.c
