@@ -32,11 +32,16 @@ add_executable(shaders_uniform
         glad46/src/glad.c
         shaders_uniform.cpp
 )
+add_executable(textures
+        glad46/src/glad.c
+        textures.cpp
+)
 
 target_link_libraries(hello_window glfw)
 target_link_libraries(hello_triangle glfw)
 target_link_libraries(hello_triangle_exercise glfw)
 target_link_libraries(shaders_uniform glfw)
+target_link_libraries(textures glfw)
 
 SET(IMAGES
         ${CMAKE_SOURCE_DIR}/3.3.shader.fs
