@@ -10,9 +10,11 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
 find_package(Qt6 COMPONENTS Widgets REQUIRED)
+find_package(OpenCV REQUIRED)
 
 add_subdirectory(packages)
 include_directories(glad46/include)
+include_directories(${OpenCV_INCLUDE_DIRS})
 
 add_executable(hello_window
     glad46/src/glad.c
