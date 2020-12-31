@@ -47,6 +47,7 @@ int main()
 
     // build and compile our shader program
     // ------------------------------------
+    float offset = 0.5f;
     Shader ourShader("3.3.shader.vs", "3.3.shader.fs"); // you can name your shader files however you like
 
     // set up vertex data (and buffer(s)) and configure vertex attributes
@@ -94,6 +95,7 @@ int main()
 
         // render the triangle
         ourShader.use();
+        ourShader.setFloat("xOffset", offset);
         glBindVertexArray(VAO);
         glDrawArrays(GL_TRIANGLES, 0, 3);
 
