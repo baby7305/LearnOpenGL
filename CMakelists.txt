@@ -22,3 +22,8 @@ add_executable(hello_window
 )
 
 target_link_libraries(hello_window glfw)
+
+SET(IMAGES ${CMAKE_SOURCE_DIR}/fruits.jpg)
+FILE(COPY ${IMAGES} DESTINATION .)
+FILE(COPY ${IMAGES} DESTINATION "Debug")
+FILE(COPY ${IMAGES} DESTINATION "Release")
