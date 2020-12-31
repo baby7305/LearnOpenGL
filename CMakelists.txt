@@ -20,8 +20,13 @@ add_executable(hello_window
     glad46/src/glad.c
     main.cpp
 )
+add_executable(example_09-04
+        glad46/src/glad.c
+        example_09-04.cpp
+)
 
 target_link_libraries(hello_window glfw)
+target_link_libraries(example_09-04 glfw ${OpenCV_LIBS})
 
 SET(IMAGES ${CMAKE_SOURCE_DIR}/fruits.jpg)
 FILE(COPY ${IMAGES} DESTINATION .)
