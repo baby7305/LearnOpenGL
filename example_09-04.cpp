@@ -6,8 +6,7 @@
 //#include <GL/gl.h>
 //#include <GL/glu.h>
 #include <glad/glad.h>
-#include <glfw3.h>
-#include <glfw3native.h>
+#include <GLFW/glfw3.h>
 
 #include <opencv2/opencv.hpp>
 #include <opencv2/core/opengl.hpp>
